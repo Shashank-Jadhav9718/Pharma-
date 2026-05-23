@@ -1,0 +1,383 @@
+/* Custom styles for Pharmaceutical Description Generator */
+
+/* Body and layout */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card enhancements */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    border: none;
+    font-weight: 600;
+}
+
+/* Progress bar styling */
+.progress {
+    border-radius: 50px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 50px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+/* Button enhancements */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004085);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #28a745, #1e7e34);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(45deg, #1e7e34, #155724);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(40,167,69,0.3);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffc107, #e0a800);
+    border: none;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, #e0a800, #d39e00);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255,193,7,0.3);
+    color: #212529;
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.15);
+}
+
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+}
+
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.15);
+}
+
+/* Input group styling */
+.input-group .btn {
+    border: 2px solid #e9ecef;
+    border-left: none;
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+.alert-info {
+    background: linear-gradient(45deg, #d1ecf1, #bee5eb);
+    color: #0c5460;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #d4edda, #c3e6cb);
+    color: #155724;
+}
+
+.alert-warning {
+    background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+    color: #856404;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+    color: #721c24;
+}
+
+/* Icon styling */
+.bi {
+    transition: all 0.3s ease;
+}
+
+/* Header background */
+.bg-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3) !important;
+}
+
+/* Feature icons */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Status counters */
+.border {
+    border: 2px solid #e9ecef !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.border:hover {
+    border-color: #007bff !important;
+    background-color: #f8f9ff;
+}
+
+/* Animation for progress bars */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-bar-animated {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* File upload area */
+.form-control[type="file"] {
+    padding: 12px;
+    background-color: #fff;
+}
+
+.form-control[type="file"]:hover {
+    background-color: #f8f9ff;
+}
+
+/* Loading spinner customization */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Custom scrollbar for long product names */
+#currentProduct {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .fs-2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Footer styling */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Utility classes */
+.opacity-25 {
+    opacity: 0.25 !important;
+}
+
+.opacity-75 {
+    opacity: 0.75 !important;
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+}
+
+/* Custom shadows */
+.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+/* API Status Light - Enhanced visibility */
+.status-light {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible !important;
+}
+
+.status-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* API Status Display */
+#apiStatusDisplay {
+    display: flex !important;
+    visibility: visible !important;
+    align-items: center;
+}
+
+#apiStatusText, #apiStatusDetails {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Status colors */
+.status-dot.bg-success {
+    background: linear-gradient(45deg, #28a745, #20c997) !important;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+}
+
+.status-dot.bg-danger {
+    background: linear-gradient(45deg, #dc3545, #e74c3c) !important;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.4);
+}
+
+.status-dot.bg-warning {
+    background: linear-gradient(45deg, #ffc107, #f39c12) !important;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+.status-dot.bg-secondary {
+    background: #6c757d !important;
+}
+
+/* Pulsing animation for active status */
+.status-dot.pulse {
+    animation: statusPulse 2s infinite;
+}
+
+@keyframes statusPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* API Status Card styling - Enhanced visibility */
+#apiStatusCard {
+    border: 2px solid #e9ecef !important;
+    transition: border-color 0.3s ease;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #f8f9fa !important;
+}
+
+#apiStatusCard.status-valid {
+    border-color: #28a745 !important;
+    background-color: #f8fff9 !important;
+}
+
+#apiStatusCard.status-invalid {
+    border-color: #dc3545 !important;
+    background-color: #fff8f8 !important;
+}
+
+#apiStatusCard.status-warning {
+    border-color: #ffc107 !important;
+    background-color: #fffef8 !important;
+}
+
+#apiStatusCard.status-testing {
+    border-color: #007bff !important;
+    background-color: #f8fbff !important;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    margin-top: auto;
+}
+
+footer small {
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+}
+
+footer strong {
+    color: #007bff;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,123,255,0.1);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+    transition: color 0.15s ease-in-out, 
+                background-color 0.15s ease-in-out, 
+                border-color 0.15s ease-in-out, 
+                box-shadow 0.15s ease-in-out;
+}

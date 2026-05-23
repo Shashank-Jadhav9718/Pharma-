@@ -1,0 +1,68 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Application output files
+output/
+uploads/
+*.xlsx
+*.xls
+test_output.*
+output_*.xlsx
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# API Keys and Secrets - NEVER COMMIT THESE!
+*.key
+api_keys.txt
+secrets.txt
+config.json
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+pharma_generator.log
+
+# Temporary files
+*.tmp
+*.temp
